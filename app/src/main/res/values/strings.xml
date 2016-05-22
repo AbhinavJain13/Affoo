@@ -5,4 +5,8 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="launch_screen_title">Affoo</string>
     <string name="launch_welcome">WELCOME</string>
+    <string name="use_my_location">Use My Location</string>
+    <string name="location">location</string>
+    <string name="selected_location">Selected Location</string>
+    <string name="lets_get_started">Let\'s get started</string>
 </resources>

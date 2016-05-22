@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/searchForLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:drawable/list_selector_background"
+            android:iconifiedByDefault="false"
+            android:queryHint="Pick Locality" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/notification_subtext_size" />
+
+        <LinearLayout
+            android:id="@+id/gps_location"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/abc_text_size_display_5_material"
+            android:baselineAligned="false"
+            android:measureWithLargestChild="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/abc_text_size_medium_material"
+                android:adjustViewBounds="false"
+                android:background="@drawable/ic_edit_location_black_24dp"
+                android:baselineAlignBottom="false"
+                android:clickable="true"
+                android:contentDescription="@string/location"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/location_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="@dimen/abc_text_size_large_material"
+                android:text="@string/use_my_location"
+                android:textAlignment="center"
+                android:textIsSelectable="true"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/notification_subtext_size"
+            android:background="#2a2929" />
+
+        <TextView
+            android:id="@+id/location_result_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/abc_text_size_headline_material"
+            android:background="@drawable/abc_edit_text_material"
+            android:maxLines="10"
+            android:paddingBottom="@dimen/notification_subtext_size"
+            android:text="We Currently deliver in selected localities \n\n Ahmedabad \n ghansoli navi mumbai \n koperkherane navi mumbai \n Noida"
+            android:textAlignment="textStart"
+            android:textStyle="italic"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@android:style/Widget.Material.Light.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_orange_dark"
+        android:text="@string/lets_get_started"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:id="@+id/lets_get_started" />
+</RelativeLayout>
