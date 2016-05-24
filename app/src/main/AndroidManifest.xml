@@ -21,9 +21,12 @@
         </activity>
 
         <activity
-            android:name=".GetLocation"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        </activity>
+        android:name=".GetLocation"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+
+        <activity android:name=".NavigationDrawer"
+            android:theme="@style/Navigation_drawer_Theme"></activity>
+
     </application>
 
 </manifest>

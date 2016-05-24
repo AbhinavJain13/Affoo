@@ -1,5 +1,6 @@
 package com.affoo.affoo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -28,6 +29,8 @@ public class GetLocation extends AppCompatActivity implements View.OnClickListen
         switch(v.getId()){
             case R.id.lets_get_started:
                 Toast.makeText(this,"Click",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this,NavigationDrawer.class);
+                startActivity(intent);
                 break;
         }
     }

@@ -9,4 +9,6 @@
     <string name="location">location</string>
     <string name="selected_location">Selected Location</string>
     <string name="lets_get_started">Let\'s get started</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
 </resources>
