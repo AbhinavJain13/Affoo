@@ -1,7 +1,6 @@
 package com.affoo.affoo;
 
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,7 +11,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class NavigationDrawer extends AppCompatActivity {
+import Adapter.NavigationDrawerAdapter;
+
+public class NavigationDrawer extends AppCompatActivity{
 
     //First We Declare Titles And Icons For Our Navigation Drawer List View
     //This Icons And Titles Are holded in an Array as you can see
@@ -55,7 +56,7 @@ public class NavigationDrawer extends AppCompatActivity {
 
         mRecyclerView.setHasFixedSize(true);                            // Letting the system know that the list objects are of fixed size
 
-        mAdapter = new NavigationDrawerAdapter(TITLES,ICONS,NAME,EMAIL,PROFILE);       // Creating the Adapter of MyAdapter class(which we are going to see in a bit)
+        mAdapter = new NavigationDrawerAdapter(this,TITLES,ICONS,NAME,EMAIL,PROFILE);       // Creating the Adapter of MyAdapter class(which we are going to see in a bit)
         // And passing the titles,icons,header view name, header view email,
         // and header view profile picture
 

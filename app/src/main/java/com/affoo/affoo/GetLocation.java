@@ -29,7 +29,7 @@ public class GetLocation extends AppCompatActivity implements View.OnClickListen
         switch(v.getId()){
             case R.id.lets_get_started:
                 Toast.makeText(this,"Click",Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(this,NavigationDrawer.class);
+                Intent intent = new Intent(this,LoginActivity.class);
                 startActivity(intent);
                 break;
         }
