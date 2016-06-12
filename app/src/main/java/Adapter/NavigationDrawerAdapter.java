@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.affoo.affoo.NavigationDrawer;
 import com.affoo.affoo.R;
 
 import AdapterHandler.NavigationDrawerAdapterHandler;
@@ -30,7 +31,7 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
     private int profile;        //int Resource for header view profile picture
     private String email;       //String Resource for header view email
 
-    private Context context;
+    public Context context;
     private DrawerItemClickListner drawerItemClickListner  = new NavigationDrawerAdapterHandler();
 
     // Creating a ViewHolder which extends the RecyclerView View Holder
@@ -60,16 +61,12 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
                 Holderid = 1;                                               // setting holder id as 1 as the object being populated are of type item row
             }
             else{
-
-
                 Name = (TextView) itemView.findViewById(R.id.name);         // Creating Text View object from header.xml for name
                 email = (TextView) itemView.findViewById(R.id.email);       // Creating Text View object from header.xml for email
                 profile = (ImageView) itemView.findViewById(R.id.circleView);// Creating Image view object from header.xml for profile pic
                 Holderid = 0;                                                // Setting holder id = 0 as the object being populated are of type header view
             }
         }
-
-
     }
 
 
@@ -175,4 +172,5 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
             });
         }
     }
+
 }

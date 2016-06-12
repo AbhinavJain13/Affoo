@@ -18,7 +18,7 @@ public class NavigationDrawer extends AppCompatActivity{
     //First We Declare Titles And Icons For Our Navigation Drawer List View
     //This Icons And Titles Are holded in an Array as you can see
 
-    String TITLES[] = {"Home","Events","Mail","Help","Travel"};
+    String TITLES[] = {"Home","Events","Mail","Help","Logout"};
     int ICONS[] = {R.drawable.ic_star_black_24dp,R.drawable.ic_edit_location_black_24dp,
             R.drawable.ic_star_black_24dp,R.drawable.ic_edit_location_black_24dp,R.drawable.ic_star_black_24dp};
 
@@ -110,5 +110,9 @@ public class NavigationDrawer extends AppCompatActivity{
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void finishNavigationActivity(){
+        finish();
     }
 }
