@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.affoo.affoo.NavigationDrawer;
 import com.affoo.affoo.R;
 
 import AdapterHandler.NavigationDrawerAdapterHandler;
@@ -62,7 +61,7 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
             }
             else{
                 Name = (TextView) itemView.findViewById(R.id.name);         // Creating Text View object from header.xml for name
-                email = (TextView) itemView.findViewById(R.id.email);       // Creating Text View object from header.xml for email
+                email = (TextView) itemView.findViewById(R.id.customer_email);       // Creating Text View object from header.xml for email
                 profile = (ImageView) itemView.findViewById(R.id.circleView);// Creating Image view object from header.xml for profile pic
                 Holderid = 0;                                                // Setting holder id = 0 as the object being populated are of type header view
             }

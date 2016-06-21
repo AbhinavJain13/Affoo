@@ -9,7 +9,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
@@ -20,6 +19,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import Model.User;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -44,7 +45,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         initFireBaseListener();
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
-        email = (EditText)findViewById(R.id.email);
+        email = (EditText)findViewById(R.id.customer_email);
         password = (EditText)findViewById(R.id.password);
         retype_password = (EditText)findViewById(R.id.retype_password);
         sign_up_button = findViewById(R.id.signup_button);

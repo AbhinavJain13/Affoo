@@ -1,4 +1,4 @@
-package com.affoo.affoo;
+package Model;
 
 import com.google.firebase.database.IgnoreExtraProperties;
 
