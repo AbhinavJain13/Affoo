@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import GlobalData.GlobalData;
 import Model.User;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
@@ -72,6 +73,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 if (user != null) {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+                    GlobalData.getGlobalInstance().setUserId(user.getUid());
                     writeNewUser(user.getUid(),"default user",user.getEmail());
                     openNavigationDrawer();
 

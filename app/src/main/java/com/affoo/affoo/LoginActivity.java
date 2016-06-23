@@ -42,6 +42,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;
 
+import GlobalData.GlobalData;
+
 import static android.Manifest.permission.READ_CONTACTS;
 
 /**
@@ -147,6 +149,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 if (user != null) {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+                    GlobalData.getGlobalInstance().setUserId(user.getUid());
                 } else {
                     // User is signed out
                     Log.d(TAG, "onAuthStateChanged:signed_out");
